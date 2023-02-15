@@ -7,6 +7,10 @@
     <title>Homepage primo es laravel</title>
 </head>
 <body>
-    
+    <div class="container">
+        <div>
+            {{ $titolo }}
+        </div>
+    </div>
 </body>
 </html>
