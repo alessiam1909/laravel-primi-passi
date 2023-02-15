@@ -18,4 +18,19 @@ Route::get('/', function () {
     $titolo = 'Hello World';
 
     return view('home', compact('titolo'));
-});
+})->name('home');
+
+
+Route::get('/primaPagina', function (){
+
+    $titolo = 'Questa è la pagina 2 ';
+
+    return view('primaPagina', compact('titolo'));
+})->name('primaPagina');
+
+Route::get('/secondaPagina', function (){
+
+    $titolo = 'Questa è la pagina 3';
+
+    return view('secondaPagina', compact('titolo'));
+})->name('secondaPagina');
